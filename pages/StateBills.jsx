@@ -1,11 +1,11 @@
-// pages/NationalBills.js
+// pages/StateBills.js
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import BillCard from "../components/BillCard";
 import bills from "@/data/bills";
 import Footer from "../components/Footer";
 
-export default function NationalBills() {
+export default function StateBills() {
   // Placeholder functions for future implementation
   // const handleSearchChange = () => {/* ... */};
   // const handleCategoryChange = () => {/* ... */};
@@ -16,7 +16,7 @@ export default function NationalBills() {
       <Navbar />
 
       <div className="container mx-auto py-16 px-4">
-        <h1 className="text-3xl font-bold text-center mb-10">National Bills</h1>
+        <h1 className="text-3xl font-bold text-center mb-10">State Bills</h1>
 
         {/* Search and Filter Section */}
         <div className="mb-8 grid grid-cols-1 md:grid-cols-3 gap-4">

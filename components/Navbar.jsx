@@ -12,8 +12,11 @@ export default function Navbar() {
           <Link href="/2024-Presidential-Election">
             2024 Presidential Election
           </Link>
-          |<Link href="/bills-recent">Vote on Bills</Link>|
-          <Link href="/events-upcoming">Important Events</Link>|
+          |
+          <Link href="/ChooseBillsPage">
+            <p className="cursor-pointer hover:underline">Vote on Bills</p>
+          </Link>
+          |<Link href="/events-upcoming">Important Events</Link>|
           <Link href="/states-representatives">
             Check Your State's Political Health
           </Link>

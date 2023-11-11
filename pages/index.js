@@ -1,8 +1,13 @@
 import Link from 'next/link';
-import Navbar from './components/Navbar';
-import BillCard from './components/BillCard';
+import Navbar from '../components/Navbar';
+import BillCard from '../components/BillCard';
+import bills from '@/data/bills';
+import Footer from '@/components/Footer';
+
 
 export default function Home() {
+  const latestBill = bills[0]; 
+
   return (
     <main className="bg-gray-950 text-white font-thin">
       <Navbar />
@@ -20,7 +25,7 @@ export default function Home() {
       <section className="container mx-auto py-16 px-4">
         <h2 className="text-3xl font-bold text-center mb-10">Latest Bill</h2>
         <div className="flex justify-center">
-          <BillCard />
+          <BillCard bill={latestBill} /> {/* Pass the latestBill as a prop */}
         </div>
         <div className="text-center mt-6">
           <Link href="/NationalBills">
@@ -63,7 +68,7 @@ export default function Home() {
           </p>
         </Link>
       </section>
-
+      <Footer />
       {/* Footer Section */}
       {/* Footer implementation goes here */}
 
