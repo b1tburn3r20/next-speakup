@@ -9,14 +9,14 @@ export default function Navbar() {
         </Link>
 
         <div className="flex gap-4">
-          <Link href="/2024-Presidential-Election">
+          <Link href="/importantEvents/PresidentialElection2024">
             2024 Presidential Election
           </Link>
           |
           <Link href="/ChooseBillsPage">
             <p className="cursor-pointer hover:underline">Vote on Bills</p>
           </Link>
-          |<Link href="/events-upcoming">Important Events</Link>|
+          |<Link href="/ChooseEventsPage">Important Events</Link>|
           <Link href="/states-representatives">
             Check Your State's Political Health
           </Link>

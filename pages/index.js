@@ -3,13 +3,14 @@ import Navbar from '../components/Navbar';
 import BillCard from '../components/BillCard';
 import bills from '@/data/bills';
 import Footer from '@/components/Footer';
-
+import Head from 'next/head';
 
 export default function Home() {
   const latestBill = bills[0]; 
 
   return (
     <main className="bg-gray-950 text-white font-thin">
+      <Head><title>Vox Populi | Amplifying Voices, Shaping Democracy </title></Head>
       <Navbar />
 
       {/* Hero Section */}

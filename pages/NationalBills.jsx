@@ -1,9 +1,11 @@
 // pages/NationalBills.js
-import Link from "next/link";
 import Navbar from "../components/Navbar";
 import BillCard from "../components/BillCard";
 import bills from "@/data/bills";
 import Footer from "../components/Footer";
+//
+import Head from "next/head";
+import Link from "next/link";
 
 export default function NationalBills() {
   // Placeholder functions for future implementation
@@ -13,6 +15,9 @@ export default function NationalBills() {
 
   return (
     <main className="bg-gray-950 text-white font-thin">
+      <Head>
+        <title>Vox Populi | Nationwide Legislation</title>
+      </Head>
       <Navbar />
 
       <div className="container mx-auto py-16 px-4">
